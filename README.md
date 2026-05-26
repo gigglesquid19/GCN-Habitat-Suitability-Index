@@ -1,6 +1,29 @@
 # GCN-HSI — Great Crested Newt Habitat Suitability Index
 
-A QGIS Processing plugin that semi-automates the **Great Crested Newt (GCN) Habitat Suitability Index (HSI)** assessment methodology described in **Oldham et al. (2000)**. The tool scores up to 10 candidate ponds per run and outputs a polygon layer with per-pond HSI scores and traffic-light symbology.
+A semi-automated **Great Crested Newt (GCN) Habitat Suitability Index (HSI)** calculator based on **Oldham et al. (2000)**. The tool scores up to 10 candidate ponds per run and outputs a polygon layer with per-pond HSI scores and traffic-light symbology.
+
+This tool is available in two versions:
+
+| Version | Platform | Distribution |
+|---|---|---|
+| **GCN-HSI QGIS Plugin** | QGIS 3.0+ / 4.0 | QGIS Plugin Repository |
+| **GCN-HSI ArcGIS Pro Tool** | ArcGIS Pro | ArcGIS Toolbox (.atbx) |
+
+> **Important:** This tool is designed to assist qualified ecologists — it does not replace a site survey or professional ecological assessment. For any site or collection of sites subject to development, a **Full HSI Assessment** incorporating site-visit data is strongly recommended. Remote Assessment results alone are not sufficient to fully characterise a site's suitability for GCN or to inform planning decisions but can act as an important, rapid screening tool to infer site visits where appropriate.
+
+---
+
+## Professional Use and Development Sites
+
+The Remote Assessment mode (SI1–SI6) provides a useful desk-based screening tool, but **should not be used as the sole basis for ecological assessment on development sites**. The following applies:
+
+- A **Full HSI Assessment** (all 10 variables) requires a physical site visit and should be carried out by a **suitably licensed and experienced ecologist**.
+- Where any pond scores **Moderate or High** suitability, further survey work — including eDNA sampling or traditional presence/absence surveys — will typically be required to determine whether GCN are present.
+- HSI scoring is one component of a broader ecological assessment. It does not constitute a protected species survey and cannot confirm presence or absence of GCN.
+- Research has demonstrated a positive correlation between HSI score and GCN population size — higher scoring ponds are more likely to support larger populations. However, **a low HSI score does not preclude GCN presence**. GCN have been recorded at ponds with low suitability scores, and survey work should not be ruled out on the basis of a low score alone.
+- More recent research has identified **Fish Presence (SI8)** and **Waterfowl Presence (SI7)** as particularly influential variables. A **Major** impact from either can result in GCN absence even in an otherwise high-scoring pond. To reflect this, this tool applies **increased weighting to SI7 and SI8** relative to the original Oldham et al. (2000) scoring. Where fish or significant waterfowl activity are recorded during a site visit, this should be given careful weight in the overall assessment.
+- For sites subject to planning applications, ecological assessments must comply with relevant national and local planning policy and should be prepared by a qualified ecologist in accordance with the **Chartered Institute of Ecology and Environmental Management (CIEEM)** guidelines.
+- In England, consult Natural England's **District Level Licensing** scheme as an alternative consenting route where applicable.
 
 ---
 
@@ -117,9 +140,15 @@ The tool automatically detects linear road features within the 250m terrestrial 
 
 ---
 
-## Reference
+## References
 
 Oldham, R.S., Keeble, J., Roberts, M.J. & Latham, D. (2000). *Evaluating the suitability of habitat for the great crested newt (Triturus cristatus)*. Herpetological Journal, 10: 143–155.
+
+ARG UK (2010). *Advice Note 5: Great Crested Newt Habitat Suitability Index*. Amphibian and Reptile Groups of the United Kingdom.
+
+Bormpoudakis, D., Foster, J., Gent, T., Griffiths, R.A., Russell, L., Starnes, T., Tzanopoulos, J. & Wilkinson, J. (2016). *Developing models to estimate the occurrence in the English countryside of Great Crested Newts, a protected species under the Habitats Directive*. Defra Project WC1108. Project Summary Report. Amphibian and Reptile Conservation, Bournemouth / University of Kent, Canterbury.
+
+Buxton, A.S., Tracey, H. & Downs, N.C. (2021). *How reliable is the habitat suitability index as a predictor of great crested newt presence or absence?* The Herpetological Journal, 31(2): 111–117. ISSN 0268-0130.
 
 ---
 
