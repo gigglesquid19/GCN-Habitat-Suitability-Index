@@ -60,10 +60,11 @@ If the plugin is not yet available in the repository or you need a specific vers
 
 ### ArcGIS Pro Users
 
-1. Go to the [Releases](../../releases) page and download **`GCN_HSI_AddinPro.esriAddinX`**.
-2. With ArcGIS Pro open, double-click the downloaded `.esriAddinX` file.
-3. Click **Install Add-In** when prompted.
-4. Restart ArcGIS Pro — a **GCN Tools** tab will appear in the ribbon with the **GCN HSI Calculator** button.
+1. Navigate to the [arcgis-pro-addin](arcgis-pro-addin/) folder in this repository.
+2. Click **`GCN_HSI_AddinPro.esriAddinX`** then click **Download raw file** (the download icon, top right of the file view).
+3. With ArcGIS Pro open, double-click the downloaded `.esriAddinX` file.
+4. Click **Install Add-In** when prompted.
+5. Restart ArcGIS Pro — a **GCN Tools** tab will appear in the ribbon with the **GCN HSI Calculator** button.
 
 > ArcGIS Pro 3.0 or later is required.
 
