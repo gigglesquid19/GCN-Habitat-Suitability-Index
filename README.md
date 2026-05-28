@@ -40,10 +40,32 @@ The Remote Assessment mode (SI1–SI6) provides a useful desk-based screening to
 
 ## Installation
 
-1. Download the latest release ZIP from the [Releases](../../releases) page.
+### QGIS Users
+
+**Recommended — Install from the QGIS Plugin Repository**
+
+1. In QGIS, go to **Plugins → Manage and Install Plugins**.
+2. In the search box, type **GCN HSI** or **GCN Habitat Suitability**.
+3. Select the plugin and click **Install Plugin**.
+4. The tool will appear in the **Processing Toolbox** under **GCN-HSI → Ecology Tools → GCN Habitat Suitability Index**.
+
+**Alternative — Install from ZIP**
+
+If the plugin is not yet available in the repository or you need a specific version:
+
+1. Go to the [Releases](../../releases) page and download **`GCN_HSI_QGISPlugin.zip`**.
 2. In QGIS, go to **Plugins → Manage and Install Plugins → Install from ZIP**.
 3. Select the downloaded ZIP and click **Install Plugin**.
 4. The tool will appear in the **Processing Toolbox** under **GCN-HSI → Ecology Tools → GCN Habitat Suitability Index**.
+
+### ArcGIS Pro Users
+
+1. Go to the [Releases](../../releases) page and download **`GCN_HSI_AddinPro.esriAddinX`**.
+2. With ArcGIS Pro open, double-click the downloaded `.esriAddinX` file.
+3. Click **Install Add-In** when prompted.
+4. Restart ArcGIS Pro — a **GCN Tools** tab will appear in the ribbon with the **GCN HSI Calculator** button.
+
+> ArcGIS Pro 3.0 or later is required.
 
 ---
 
