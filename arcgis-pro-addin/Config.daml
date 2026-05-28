@@ -1,0 +1,30 @@
+<ArcGIS defaultAssembly="GCN_HSI_AddinPro.dll" defaultNamespace="GCN_HSI_AddinPro" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{3f2a1b9c-4e5d-6f7a-8b9c-0d1e2f3a4b5c}" version="1.0" desktopVersion="3.0.36057" product="ArcGISPro">
+    <Name>GCN Habitat Suitability Calculator</Name>
+    <Description>Semi-automated Great Crested Newt (GCN) Habitat Suitability Index (HSI) calculator for ArcGIS Pro. Automates 6 of 10 HSI variables based on Oldham et al. (2000). Queries Natural England GCN Risk Zones and JRC Global Surface Water automatically.</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>Ciaran Egan</Author>
+    <Company>Carnell Support Services Ltd</Company>
+    <Date>28/05/2026</Date>
+    <Subject>Ecology</Subject>
+  </AddInInfo>
+  <modules>
+    <insertModule id="GCN_HSI_Module" className="Module1" autoLoad="false" caption="GCN Habitat Suitability">
+      <tabs>
+        <tab id="GCN_HSI_Tab" caption="GCN Tools">
+          <group refID="GCN_HSI_Group" />
+        </tab>
+      </tabs>
+      <groups>
+        <group id="GCN_HSI_Group" caption="Habitat Suitability" appearsOnAddInTab="false">
+          <button refID="GCN_HSI_Button" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <button id="GCN_HSI_Button" caption="GCN HSI Calculator" className="GCNHabitatSuitabilityButton" loadOnClick="true" smallImage="Images\AddinDesktop16.png" largeImage="Images\AddinDesktop32.png">
+          <tooltip heading="GCN Habitat Suitability Index">Calculate Great Crested Newt Habitat Suitability Index. Automates 6 of 10 HSI variables including geographic location, pond count, and terrestrial habitat quality.<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
