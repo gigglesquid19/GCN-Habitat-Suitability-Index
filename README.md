@@ -2,9 +2,9 @@
 
 A semi-automated **Great Crested Newt (GCN) Habitat Suitability Index (HSI)** calculator based on updated version of **Oldham et al. (2000)**. 
 
-> The tool scores up to 10 candidate ponds per run and outputs a polygon layer with per-pond HSI scores and traffic-light symbology.
-> Has a Remote Assessment Mode that quickly calculates Habitat Suitability based on 6 key variables - ideal for early stage scoping.
-> The tool has auto-parametization on several key variables to save the user time.
+> The tool scores up to 10 candidate ponds per run and outputs a polygon layer with per-pond HSI scores and traffic-light symbology.\n
+> Has a Remote Assessment Mode that quickly calculates Habitat Suitability based on 6 key variables - ideal for early stage scoping.\n
+> The tool has auto-parametization on several key variables to save the user time.\n
 > Modern research has been taken into account in the weightings.
 
 This tool is available in two versions:
