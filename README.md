@@ -33,7 +33,7 @@ This tool is available in two versions:
 
 If the plugin is not yet available in the repository or you need a specific version:
 
-1. Go to the [Releases](../../releases) page and download **`GCN_HSI_QGISPlugin.zip`**.
+1. Navigate to code repo and download **`GCN_HSI_QGISPlugin.zip`**.
 2. In QGIS, go to **Plugins → Manage and Install Plugins → Install from ZIP**.
 3. Select the downloaded ZIP and click **Install Plugin**.
 4. The tool will appear in the **Processing Toolbox** under **GCN-HSI → Ecology Tools → GCN Habitat Suitability Index**.
