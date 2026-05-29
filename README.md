@@ -1,6 +1,11 @@
 # GCN-HSI — Great Crested Newt Habitat Suitability Index
 
-A semi-automated **Great Crested Newt (GCN) Habitat Suitability Index (HSI)** calculator based on **Oldham et al. (2000)**. The tool scores up to 10 candidate ponds per run and outputs a polygon layer with per-pond HSI scores and traffic-light symbology.
+A semi-automated **Great Crested Newt (GCN) Habitat Suitability Index (HSI)** calculator based on updated version of **Oldham et al. (2000)**. 
+
+> The tool scores up to 10 candidate ponds per run and outputs a polygon layer with per-pond HSI scores and traffic-light symbology.
+> Has a Remote Assessment Mode that quickly calculates Habitat Suitability based on 6 key variables - ideal for early stage scoping.
+> The tool has auto-parametization on several key variables to save the user time.
+> Modern research has been taken into account in the weightings.
 
 This tool is available in two versions:
 
@@ -10,31 +15,6 @@ This tool is available in two versions:
 | **GCN-HSI ArcGIS Pro Tool** | ArcGIS Pro | ArcGIS Toolbox (.atbx) |
 
 > **Important:** This tool is designed to assist qualified ecologists — it does not replace a site survey or professional ecological assessment. For any site or collection of sites subject to development, a **Full HSI Assessment** incorporating site-visit data is strongly recommended. Remote Assessment results alone are not sufficient to fully characterise a site's suitability for GCN or to inform planning decisions but can act as an important, rapid screening tool to infer site visits where appropriate.
-
----
-
-## Professional Use and Development Sites
-
-The Remote Assessment mode (SI1–SI6) provides a useful desk-based screening tool, but **should not be used as the sole basis for ecological assessment on development sites**. The following applies:
-
-- A **Full HSI Assessment** (all 10 variables) requires a physical site visit and should be carried out by a **suitably licensed and experienced ecologist**.
-- Where any pond scores **Moderate or High** suitability, further survey work — including eDNA sampling or traditional presence/absence surveys — will typically be required to determine whether GCN are present.
-- HSI scoring is one component of a broader ecological assessment. It does not constitute a protected species survey and cannot confirm presence or absence of GCN.
-- Research has demonstrated a positive correlation between HSI score and GCN population size — higher scoring ponds are more likely to support larger populations. However, **a low HSI score does not preclude GCN presence**. GCN have been recorded at ponds with low suitability scores, and survey work should not be ruled out on the basis of a low score alone.
-- More recent research has identified **Fish Presence (SI8)** and **Waterfowl Presence (SI7)** as particularly influential variables. A **Major** impact from either can result in GCN absence even in an otherwise high-scoring pond. To reflect this, this tool applies **increased weighting to SI7 and SI8** relative to the original Oldham et al. (2000) scoring. Where fish or significant waterfowl activity are recorded during a site visit, this should be given careful weight in the overall assessment.
-- For sites subject to planning applications, ecological assessments must comply with relevant national and local planning policy and should be prepared by a qualified ecologist in accordance with the **Chartered Institute of Ecology and Environmental Management (CIEEM)** guidelines.
-- In England, consult Natural England's **District Level Licensing** scheme as an alternative consenting route where applicable.
-
----
-
-## Requirements
-
-- QGIS 3.0 or later (compatible with QGIS 4.0)
-- Internet connection (for automated data queries)
-- Input GIS data:
-  - Candidate pond polygon(s)
-  - Existing ponds layer (within 1km search radius)
-  - UK Habitat polygons layer (within 250m buffer)
 
 ---
 
@@ -69,6 +49,30 @@ If the plugin is not yet available in the repository or you need a specific vers
 > ArcGIS Pro 3.0 or later is required.
 
 ---
+
+## Professional Use and Development Sites
+
+The Remote Assessment mode (SI1–SI6) provides a useful desk-based screening tool, but **should not be used as the sole basis for ecological assessment on development sites**. The following applies:
+
+- A **Full HSI Assessment** (all 10 variables) requires a physical site visit and should be carried out by a **suitably licensed and experienced ecologist**.
+- Where any pond scores **Moderate or High** suitability, further survey work — including eDNA sampling or traditional presence/absence surveys — will typically be required to determine whether GCN are present.
+- HSI scoring is one component of a broader ecological assessment. It does not constitute a protected species survey and cannot confirm presence or absence of GCN.
+- Research has demonstrated a positive correlation between HSI score and GCN population size — higher scoring ponds are more likely to support larger populations. However, **a low HSI score does not preclude GCN presence**. GCN have been recorded at ponds with low suitability scores, and survey work should not be ruled out on the basis of a low score alone.
+- More recent research has identified **Fish Presence (SI8)** and **Waterfowl Presence (SI7)** as particularly influential variables. A **Major** impact from either can result in GCN absence even in an otherwise high-scoring pond. To reflect this, this tool applies **increased weighting to SI7 and SI8** relative to the original Oldham et al. (2000) scoring. Where fish or significant waterfowl activity are recorded during a site visit, this should be given careful weight in the overall assessment.
+- For sites subject to planning applications, ecological assessments must comply with relevant national and local planning policy and should be prepared by a qualified ecologist in accordance with the **Chartered Institute of Ecology and Environmental Management (CIEEM)** guidelines.
+- In England, consult Natural England's **District Level Licensing** scheme as an alternative consenting route where applicable.
+
+---
+
+## Requirements
+
+- QGIS 3.0 or later (compatible with QGIS 4.0)
+- Internet connection (for automated data queries)
+- Input GIS data:
+  - Candidate pond polygon(s)
+  - Existing ponds layer (within 1km search radius)
+  - UK Habitat polygons layer (within 250m buffer)
+
 
 ## Assessment Modes
 
